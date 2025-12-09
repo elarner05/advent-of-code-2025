@@ -1,6 +1,11 @@
 nodes = []
+
+
 with open("day-8.txt", "r") as file:
     nodes = [[int(item) for item in node.strip().split(",")] for node in file]
+
+
+
 
 def squared_distance(node1, node2): # we only need the square distance, to save processing time
     distance = (node1[0] - node2[0])**2 + (node1[1] - node2[1])**2 + (node1[2] - node2[2])**2
